@@ -1,21 +1,22 @@
-function checkInventory() {
-  return new Promise((resolve, reject) => {
-    const inStock = true;
-    if (inStock) {
-      resolve({
-        name: "Macbook",
-        price: 1000,
-      });
-    } else {
-      reject("Товара нет в наличии");
-    }
+function checkInventory(name, inStock) {
+  return new Promise((resolve, reject) => { 
+    setTimeout(() => {
+        if (inStock) {
+            resolve(`Товар ${name} в наличии`);
+        } else {
+            reject(`Товара ${name} нет в наличии`);
+        }
+  });
   });
 }
 
-checkInventory(false)
-  .then((inStock) => console.log("Товар есть"))
-  .catch((error) => console.log("Ошибка"));
+checkInventory("Macbook", false)
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 
+  checkInventory("Asus", true)
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 // console.log("Промисы");
 // const simplePromise = new Promise((resolve, reject) => {
 //     const success = true;
