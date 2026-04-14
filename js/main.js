@@ -1,3 +1,21 @@
+import {E, cube, square } from "./math.js";
+console.log("Значение Е: ", E);
+console.log(square(13));
+console.log(cube(3));
+
+// import { greet, add, PI } from "./utils.js";
+// console.log("Модули");
+// console.log(greet("Alexey"));
+// console.log("5 + 3 = ", add(5, 3));
+// console.log("Значение PI", PI);
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("4*7=", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение: ", Utils.multiply(3, 9));
+
 // console.log("\n=== Деструктуризация массивов ===");
 // const colors = ["red", "green", "blue"];
 
@@ -114,26 +132,27 @@
 // console.log("Остальные числа", rest);
 
 //Task 7.5
-const nums1 = [77, 88, 99];
-const nums2 = [1, 3, 5];
-const combin = [...nums1, ...nums2];
-console.log("Объединение массивов ", combin);
+// const nums1 = [77, 88, 99];
+// const nums2 = [1, 3, 5];
+// const combin = [...nums1, ...nums2];
+// console.log("Объединение массивов ", combin);
 
-function findMax(...nums) {
-    return Math.max(...nums);
-}
+// function findMax(...nums) {
+//     return Math.max(...nums);
+// }
 
-console.log(findMax(88, 2, 87));
+// console.log(findMax(88, 2, 87));
 
-const country = {
-    name: "Португалия",
-    capital: "Лиссабон"
-};
+// const country = {
+//     name: "Португалия",
+//     capital: "Лиссабон"
+// };
 
-const footballer = {
-    name: "Cristiano Ronaldo",
-    years: 41,
-};
+// const footballer = {
+//     name: "Cristiano Ronaldo",
+//     years: 41,
+// };
 
-const fullInfo = {...country, ...footballer};
-console.log("Полная информация", fullInfo);
+// const fullInfo = {...country, ...footballer};
+// console.log("Полная информация", fullInfo);
+
